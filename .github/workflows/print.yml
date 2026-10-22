@@ -30,7 +30,10 @@ jobs:
         run: git log --oneline > log.txt
 
       - name: Run shell 
-        run: git config --global user.email "2309227@uad.ac.uk" git config --global user.name "Flow"
+        run: git config --global user.email "2309227@uad.ac.uk" 
+        
+      - name: Add name
+        run: git config --global user.name "Flow"
 
       - name: Add new file
         run: git add *
