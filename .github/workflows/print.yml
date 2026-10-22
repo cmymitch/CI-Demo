@@ -29,6 +29,9 @@ jobs:
       - name: Run a one-line script
         run: git log --oneline > log.txt
 
+      - name: Add creds to git for push
+      - run: git config --global user.email "2309227@uad.ac.uk" git config --global user.name "Flow"
+
       - name: Add new file
         run: git add *
 
